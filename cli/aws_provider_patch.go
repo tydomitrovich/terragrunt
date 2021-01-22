@@ -53,7 +53,7 @@ func applyAwsProviderPatch(terragruntOptions *options.TerragruntOptions) error {
 	}
 
 	for _, terraformFile := range terraformFilesInModules {
-		util.Debugf(terragruntOptions.Logger, "Looking at file %s", terraformFile)
+		terragruntOptions.Logger.Debugf("Looking at file %s", terraformFile)
 		originalTerraformFileContents, err := util.ReadFileAsString(terraformFile)
 		if err != nil {
 			return err
@@ -65,7 +65,7 @@ func applyAwsProviderPatch(terragruntOptions *options.TerragruntOptions) error {
 		}
 
 		if codeWasUpdated {
-			terragruntOptions.Logger.Printf("Patching AWS provider in %s", terraformFile)
+			terragruntOptions.Logger.Debugf("Patching AWS provider in %s", terraformFile)
 			if err := util.WriteFileWithSamePermissions(terraformFile, terraformFile, []byte(updatedTerraformFileContents)); err != nil {
 				return err
 			}
