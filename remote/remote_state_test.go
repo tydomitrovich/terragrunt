@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gruntwork-io/terragrunt/options"
 	"github.com/stretchr/testify/assert"
+	"github.com/tydomitrovich/terragrunt/options"
 )
 
 /**

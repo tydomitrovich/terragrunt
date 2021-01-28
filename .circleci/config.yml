@@ -1,5 +1,5 @@
 workspace_root: &workspace_root
-  /go/src/github.com/gruntwork-io/terragrunt
+  /go/src/github.com/tydomitrovich/terragrunt
 
 defaults: &defaults
   working_directory: *workspace_root
@@ -22,7 +22,7 @@ jobs:
     - save_cache:
         key: dep-{{ checksum "Gopkg.lock" }}
         paths:
-        - /go/src/github.com/gruntwork-io/terragrunt/vendor
+        - /go/src/github.com/tydomitrovich/terragrunt/vendor
     - persist_to_workspace:
         root: *workspace_root
         paths: vendor

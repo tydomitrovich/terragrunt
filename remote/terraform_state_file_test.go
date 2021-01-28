@@ -2,9 +2,10 @@ package remote
 
 import (
 	"encoding/json"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/tydomitrovich/terragrunt/errors"
 )
 
 func TestParseTerraformStateLocal(t *testing.T) {

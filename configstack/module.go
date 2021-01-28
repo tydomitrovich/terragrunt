@@ -7,13 +7,13 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
 	"github.com/hashicorp/go-getter"
 	zglob "github.com/mattn/go-zglob"
+	"github.com/tydomitrovich/terragrunt/config"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/shell"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 const maxLevelsOfRecursion = 20
@@ -261,7 +261,7 @@ func resolveTerraformModule(terragruntConfigPath string, terragruntOptions *opti
 		opts.DownloadDir = downloadDir
 	}
 
-	// Fix for https://github.com/gruntwork-io/terragrunt/issues/208
+	// Fix for https://github.com/tydomitrovich/terragrunt/issues/208
 	matches, err := filepath.Glob(filepath.Join(filepath.Dir(terragruntConfigPath), "*.tf"))
 	if err != nil {
 		return nil, err

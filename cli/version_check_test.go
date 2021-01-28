@@ -1,10 +1,11 @@
 package cli
 
 import (
-	"github.com/gruntwork-io/terragrunt/errors"
+	"testing"
+
 	"github.com/hashicorp/go-version"
 	"github.com/stretchr/testify/assert"
-	"testing"
+	"github.com/tydomitrovich/terragrunt/errors"
 )
 
 func TestCheckTerraformVersionMeetsConstraintEqual(t *testing.T) {

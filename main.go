@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/gruntwork-io/terragrunt/cli"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
 	"os"
+
+	"github.com/tydomitrovich/terragrunt/cli"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/shell"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 // This variable is set at build time using -ldflags parameters. For more info, see:

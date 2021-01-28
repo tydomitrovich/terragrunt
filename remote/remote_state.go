@@ -2,9 +2,10 @@ package remote
 
 import (
 	"fmt"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
 	"reflect"
+
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
 )
 
 // Configuration for Terraform remote state

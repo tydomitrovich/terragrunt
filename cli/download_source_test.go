@@ -9,11 +9,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tydomitrovich/terragrunt/config"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 func TestAlreadyHaveLatestCodeLocalFilePath(t *testing.T) {
@@ -104,7 +104,7 @@ func TestDownloadTerraformSourceIfNecessaryLocalDirToAlreadyDownloadedDir(t *tes
 func TestDownloadTerraformSourceIfNecessaryRemoteUrlToEmptyDir(t *testing.T) {
 	t.Parallel()
 
-	canonicalUrl := "github.com/gruntwork-io/terragrunt//test/fixture-download-source/hello-world"
+	canonicalUrl := "github.com/tydomitrovich/terragrunt//test/fixture-download-source/hello-world"
 	downloadDir := tmpDir(t)
 	defer os.Remove(downloadDir)
 
@@ -114,7 +114,7 @@ func TestDownloadTerraformSourceIfNecessaryRemoteUrlToEmptyDir(t *testing.T) {
 func TestDownloadTerraformSourceIfNecessaryRemoteUrlToAlreadyDownloadedDir(t *testing.T) {
 	t.Parallel()
 
-	canonicalUrl := "github.com/gruntwork-io/terragrunt//test/fixture-download-source/hello-world"
+	canonicalUrl := "github.com/tydomitrovich/terragrunt//test/fixture-download-source/hello-world"
 	downloadDir := tmpDir(t)
 	defer os.Remove(downloadDir)
 
@@ -126,7 +126,7 @@ func TestDownloadTerraformSourceIfNecessaryRemoteUrlToAlreadyDownloadedDir(t *te
 func TestDownloadTerraformSourceIfNecessaryRemoteUrlToAlreadyDownloadedDirDifferentVersion(t *testing.T) {
 	t.Parallel()
 
-	canonicalUrl := "github.com/gruntwork-io/terragrunt//test/fixture-download-source/hello-world?ref=v0.9.7"
+	canonicalUrl := "github.com/tydomitrovich/terragrunt//test/fixture-download-source/hello-world?ref=v0.9.7"
 	downloadDir := tmpDir(t)
 	defer os.Remove(downloadDir)
 
@@ -138,7 +138,7 @@ func TestDownloadTerraformSourceIfNecessaryRemoteUrlToAlreadyDownloadedDirDiffer
 func TestDownloadTerraformSourceIfNecessaryRemoteUrlToAlreadyDownloadedDirSameVersion(t *testing.T) {
 	t.Parallel()
 
-	canonicalUrl := "github.com/gruntwork-io/terragrunt//test/fixture-download-source/hello-world?ref=v0.9.7"
+	canonicalUrl := "github.com/tydomitrovich/terragrunt//test/fixture-download-source/hello-world?ref=v0.9.7"
 	downloadDir := tmpDir(t)
 	defer os.Remove(downloadDir)
 
@@ -150,7 +150,7 @@ func TestDownloadTerraformSourceIfNecessaryRemoteUrlToAlreadyDownloadedDirSameVe
 func TestDownloadTerraformSourceIfNecessaryRemoteUrlOverrideSource(t *testing.T) {
 	t.Parallel()
 
-	canonicalUrl := "github.com/gruntwork-io/terragrunt//test/fixture-download-source/hello-world?ref=v0.9.7"
+	canonicalUrl := "github.com/tydomitrovich/terragrunt//test/fixture-download-source/hello-world?ref=v0.9.7"
 	downloadDir := tmpDir(t)
 	defer os.Remove(downloadDir)
 
