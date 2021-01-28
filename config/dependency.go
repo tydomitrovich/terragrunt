@@ -19,13 +19,13 @@ import (
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/remote"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/aws_helper"
+	"github.com/tydomitrovich/terragrunt/codegen"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/remote"
+	"github.com/tydomitrovich/terragrunt/shell"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 type Dependency struct {

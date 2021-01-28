@@ -246,7 +246,7 @@ For the `s3` backend, the following additional properties are supported in the `
 - `dynamodb_table_tags`: A map of key value pairs to associate as tags on the created DynamoDB remote state lock table.
 - `disable_aws_client_checksums`: When `true`, disable computing and checking checksums on the request and response,
   such as the CRC32 check for DynamoDB. This can be used to workaround
-  https://github.com/gruntwork-io/terragrunt/issues/1059.
+  https://github.com/tydomitrovich/terragrunt/issues/1059.
 - `accesslogging_bucket_name`: (Optional) When provided as a valid `string`, create an S3 bucket with this name to store the access logs for the S3 bucket used to store Terraform state. If not provided, or string is empty or invalid S3 bucket name, then server access logging for the S3 bucket storing the terraform state will be disabled.
 
 For the `gcs` backend, the following additional properties are supported in the `config` attribute:

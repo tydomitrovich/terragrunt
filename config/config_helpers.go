@@ -16,11 +16,11 @@ import (
 	"github.com/zclconf/go-cty/cty/function"
 	"go.mozilla.org/sops/v3/decrypt"
 
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/aws_helper"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/shell"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 // List of terraform commands that accept -lock-timeout

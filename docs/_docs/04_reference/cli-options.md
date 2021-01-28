@@ -73,7 +73,7 @@ This will recursively search the current working directory for any folders that 
 dependencies between them—either via `dependency` blocks or `terraform_remote_state` data sources—and you've never 
 deployed them, then `plan-all` will fail as it will not be possible to resolve the `dependency` blocks or 
 `terraform_remote_state` data sources! Please [see here for more 
-information](https://github.com/gruntwork-io/terragrunt/issues/720#issuecomment-497888756).
+information](https://github.com/tydomitrovich/terragrunt/issues/720#issuecomment-497888756).
 
 
 ### apply-all
@@ -114,7 +114,7 @@ This will recursively search the current working directory for any folders that 
 dependencies between them—either via `dependency` blocks or `terraform_remote_state` data sources—and you've never 
 deployed them, then `output-all` will fail as it will not be possible to resolve the `dependency` blocks or 
 `terraform_remote_state` data sources! Please [see here for more 
-information](https://github.com/gruntwork-io/terragrunt/issues/720#issuecomment-497888756).
+information](https://github.com/tydomitrovich/terragrunt/issues/720#issuecomment-497888756).
 
 ### destroy-all
 

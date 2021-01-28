@@ -8,9 +8,9 @@ import (
 	"github.com/hashicorp/hcl/v2/hclsyntax"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 // MaxIter is the maximum number of depth we support in recursively evaluating locals.
@@ -320,5 +320,5 @@ func (err CouldNotEvaluateAllLocalsError) Error() string {
 type MaxIterError struct{}
 
 func (err MaxIterError) Error() string {
-	return "Maximum iterations reached in attempting to evaluate locals. This is most likely a bug in Terragrunt. Please file an issue on the project: https://github.com/gruntwork-io/terragrunt/issues"
+	return "Maximum iterations reached in attempting to evaluate locals. This is most likely a bug in Terragrunt. Please file an issue on the project: https://github.com/tydomitrovich/terragrunt/issues"
 }

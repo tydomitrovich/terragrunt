@@ -14,8 +14,8 @@ import (
 	"github.com/hashicorp/hcl/v2/hclwrite"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 const (

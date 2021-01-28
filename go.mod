@@ -1,4 +1,4 @@
-module github.com/gruntwork-io/terragrunt
+module github.com/tydomitrovich/terragrunt
 
 go 1.13
 
