@@ -12,9 +12,9 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 // Commands that implement a REPL need a pseudo TTY when run as a subprocess in order for the readline properties to be

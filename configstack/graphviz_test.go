@@ -2,7 +2,7 @@ package configstack
 
 import (
 	"bytes"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/options"
 	"github.com/stretchr/testify/assert"
 	"strings"
 	"testing"

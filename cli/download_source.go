@@ -11,10 +11,10 @@ import (
 
 	"path/filepath"
 
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/config"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/util"
 	"github.com/hashicorp/go-getter"
 	urlhelper "github.com/hashicorp/go-getter/helper/url"
 )

@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/remote"
+	"github.com/tydomitrovich/terragrunt/codegen"
+	"github.com/tydomitrovich/terragrunt/remote"
 )
 
 // This test makes sure that all the fields from the TerragruntConfig struct are accounted for in the conversion to

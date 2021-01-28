@@ -3,8 +3,8 @@ package shell
 import (
 	"bufio"
 	"fmt"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
 	"os"
 	"strings"
 )

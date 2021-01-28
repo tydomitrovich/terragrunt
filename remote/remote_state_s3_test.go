@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/aws/aws-sdk-go/aws"
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/aws_helper"
+	"github.com/tydomitrovich/terragrunt/options"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -12,11 +12,11 @@ import (
 	"github.com/hashicorp/hcl/v2/hclparse"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/remote"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/codegen"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/remote"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 const DefaultTerragruntConfigPath = "terragrunt.hcl"
@@ -371,7 +371,7 @@ func ParseConfigFile(filename string, terragruntOptions *options.TerragruntOptio
 // 2. Parse locals. Since locals are parsed next, you can only reference other locals in the locals block. Although it
 //    is possible to merge locals from a config imported with an include block, we do not do that here to avoid
 //    complicated referencing issues. Please refer to the globals proposal for an alternative that allows merging from
-//    included config: https://github.com/gruntwork-io/terragrunt/issues/814
+//    included config: https://github.com/tydomitrovich/terragrunt/issues/814
 //    Allowed References:
 //      - locals
 // 3. Parse dependency blocks. This includes running `terragrunt output` to fetch the output data from another

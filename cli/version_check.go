@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/shell"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/shell"
 	"github.com/hashicorp/go-version"
 )
 

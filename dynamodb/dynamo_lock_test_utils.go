@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/aws_helper"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/util"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

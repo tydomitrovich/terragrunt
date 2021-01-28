@@ -31,17 +31,17 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/api/iterator"
 
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/cli"
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/configstack"
-	terragruntDynamoDb "github.com/gruntwork-io/terragrunt/dynamodb"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/remote"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/aws_helper"
+	"github.com/tydomitrovich/terragrunt/cli"
+	"github.com/tydomitrovich/terragrunt/codegen"
+	"github.com/tydomitrovich/terragrunt/config"
+	"github.com/tydomitrovich/terragrunt/configstack"
+	terragruntDynamoDb "github.com/tydomitrovich/terragrunt/dynamodb"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/remote"
+	"github.com/tydomitrovich/terragrunt/shell"
+	"github.com/tydomitrovich/terragrunt/util"
 )
 
 // hard-code this to match the test fixture for now
@@ -2177,7 +2177,7 @@ func TestTerragruntInfo(t *testing.T) {
 	assert.Equal(t, dat.IamRole, "")
 }
 
-// Test case for yamldecode bug: https://github.com/gruntwork-io/terragrunt/issues/834
+// Test case for yamldecode bug: https://github.com/tydomitrovich/terragrunt/issues/834
 func TestYamlDecodeRegressions(t *testing.T) {
 	t.Parallel()
 
@@ -2561,7 +2561,7 @@ func TestDependencyOutputTypeConversion(t *testing.T) {
 	assert.Equal(t, outputs["from_env"].Value, "default")
 }
 
-// Regression testing for https://github.com/gruntwork-io/terragrunt/issues/1102: Ordering keys from
+// Regression testing for https://github.com/tydomitrovich/terragrunt/issues/1102: Ordering keys from
 // maps to avoid random placements when terraform file is generated.
 func TestOrderedMapOutputRegressions1102(t *testing.T) {
 	t.Parallel()
@@ -2635,7 +2635,7 @@ func TestDependencyOutputCycleHandling(t *testing.T) {
 	}
 }
 
-// Regression testing for https://github.com/gruntwork-io/terragrunt/issues/854: Referencing a dependency that is a
+// Regression testing for https://github.com/tydomitrovich/terragrunt/issues/854: Referencing a dependency that is a
 // subdirectory of the current config, which includes an `include` block has problems resolving the correct relative
 // path.
 func TestDependencyOutputRegression854(t *testing.T) {
@@ -2658,7 +2658,7 @@ func TestDependencyOutputRegression854(t *testing.T) {
 	require.NoError(t, err)
 }
 
-// Regression testing for https://github.com/gruntwork-io/terragrunt/issues/906
+// Regression testing for https://github.com/tydomitrovich/terragrunt/issues/906
 func TestDependencyOutputSameOutputConcurrencyRegression(t *testing.T) {
 	t.Parallel()
 

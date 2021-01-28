@@ -9,15 +9,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gruntwork-io/terragrunt/aws_helper"
-	"github.com/gruntwork-io/terragrunt/codegen"
-	"github.com/gruntwork-io/terragrunt/config"
-	"github.com/gruntwork-io/terragrunt/configstack"
-	"github.com/gruntwork-io/terragrunt/errors"
-	"github.com/gruntwork-io/terragrunt/options"
-	"github.com/gruntwork-io/terragrunt/remote"
-	"github.com/gruntwork-io/terragrunt/shell"
-	"github.com/gruntwork-io/terragrunt/util"
+	"github.com/tydomitrovich/terragrunt/aws_helper"
+	"github.com/tydomitrovich/terragrunt/codegen"
+	"github.com/tydomitrovich/terragrunt/config"
+	"github.com/tydomitrovich/terragrunt/configstack"
+	"github.com/tydomitrovich/terragrunt/errors"
+	"github.com/tydomitrovich/terragrunt/options"
+	"github.com/tydomitrovich/terragrunt/remote"
+	"github.com/tydomitrovich/terragrunt/shell"
+	"github.com/tydomitrovich/terragrunt/util"
 	"github.com/mattn/go-zglob"
 	"github.com/urfave/cli"
 )
@@ -227,7 +227,7 @@ func CreateTerragruntCli(version string, writer io.Writer, errwriter io.Writer) 
 	app.Writer = writer
 	app.ErrWriter = errwriter
 	app.UsageText = `Terragrunt is a thin wrapper for Terraform that provides extra tools for working with multiple
-   Terraform modules, remote state, and locking. For documentation, see https://github.com/gruntwork-io/terragrunt/.`
+   Terraform modules, remote state, and locking. For documentation, see https://github.com/tydomitrovich/terragrunt/.`
 
 	return app
 }
@@ -509,7 +509,7 @@ func shouldRunHook(hook config.Hook, terragruntOptions *options.TerragruntOption
 	//then execute.
 	//Skip execution if there was an error AND we care about errors
 
-	//resolves: https://github.com/gruntwork-io/terragrunt/issues/459
+	//resolves: https://github.com/tydomitrovich/terragrunt/issues/459
 	//by helping to filter out nil errors that were acting as false positives
 	//for the len(previousExecErrors) == 0 check that used to be here
 	multiError := errors.NewMultiError(previousExecErrors...)

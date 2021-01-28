@@ -16,7 +16,7 @@ Many developers use Stack Overflow to find help. Use the `terragrunt` tag to fin
 
 ## Github Issues
 
-Read through [existing issues](https://github.com/gruntwork-io/terragrunt/issues) or post a new one. Github issues is a good place to:
+Read through [existing issues](https://github.com/tydomitrovich/terragrunt/issues) or post a new one. Github issues is a good place to:
 
   - report a bug,
 
